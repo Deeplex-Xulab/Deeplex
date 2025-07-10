@@ -326,7 +326,7 @@ usage: doubletPrediction.py [-h] [-m MTX] [-s SINGLE_PRED]
                             [-c COORDINATE] [-f FRACTION] [-it IMG_TYPE]
                             [-o OUT] [-p PREFIX]
 
-Doublet cell prediction. Based on the previous step's prediction results
+Doublet cell prediction. Based on the previous step’s prediction results
 for each cell, further predict which of them are doublets.
 
 optional arguments:
