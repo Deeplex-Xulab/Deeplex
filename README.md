@@ -4,8 +4,6 @@
 
 **Deeplex：A variational autoencoder based demultiplexing approach for pooled single-cell sequencing data**
 
-[toc]
-
 ## Introduction
 
 Deeplex is a deep learning-based method for clustering individuals in mixed-genotype single-cell RNA-seq experiments.
