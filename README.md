@@ -4,6 +4,8 @@
 
 **Deeplex：A variational autoencoder based demultiplexing approach for pooled single-cell sequencing data**
 
+[toc]
+
 ## Introduction
 
 Deeplex is a deep learning-based method for clustering individuals in mixed-genotype single-cell RNA-seq experiments.
@@ -44,10 +46,40 @@ If you find this tool useful, please cite:
 
 https://github.com/Deeplex-Xulab/Deeplex
 
-https://deeplex-xulab.github.io/
+https://deeplex-xulab.github.io
+
+https://figshare.com/s/7b0b79dafc2e13592436
 
 ----
 
+## Getting started (Linux)
+
+Deeplex is distributed as a Singularity/Apptainer container for easy and reproducible installation across different Linux environments.
+
+### Download the Singularity image
+
+The pre-built container image (`deeplex.sif`, 1.66 GB) is hosted on figshare: 
+https://figshare.com/s/7b0b79dafc2e13592436
+
+You may download it directly via your browser and place `deeplex.sif` in your working directory.
+
+### Requirements
+
+Singularity version ≥ 3.5.3 or Apptainer version ≥ 1.0.0.
+
+Singularity has been rebranded as Apptainer; both are supported.
+
+If you are running on a scientific computing cluster, Singularity/Apptainer is often pre-installed. Please contact your system administrator if you are unsure.
+
+If you are running on your own Linux machine, you may need to install Singularity or Apptainer first.
+
+```sh
+which singularity
+singularity --version
+# or
+which apptainer
+apptainer --version
+```
 
 ## Using the pipeline script
 
@@ -376,4 +408,3 @@ CAATGACCACCAGTTA-1	1	1	--
 ```
 
 - The columns of the file represent the cell barcodes, the prediction results (including doublets), the best single-cell (singlet) cluster prediction for each cell, and the two most likely source clusters for doublets.
-
