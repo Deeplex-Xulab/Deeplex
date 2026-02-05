@@ -93,8 +93,8 @@ The options for using **`pipeline.py`** are:
 ```shell
 singularity exec deeplex.sif pipeline.py -h
 usage: pipeline.py [-h] [-H] [-g GENOME] [-b BAM] [-c BARCODE]
-                   [-o OUT] [-bn BATCH_NUM] [-en EPOCH_NUM]
-                   [-ld LATENT_DIM] [-cn CLUSTER_NUM]
+                   [-cn CLUSTER_NUM] [-o OUT] [-bn BATCH_NUM]
+                   [-en EPOCH_NUM] [-ld LATENT_DIM]
                    [-si SHOW_INFO] [-tr TEST_RADIO]
                    [-vr VALID_RADIO] [-s SEED]
                    [-lr LEARNING_RATE] [-it IMG_TYPE]
