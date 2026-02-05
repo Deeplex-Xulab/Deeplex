@@ -4,6 +4,7 @@
 
 **Deeplex：A variational autoencoder based demultiplexing approach for pooled single-cell sequencing data**
 
+
 ## Introduction
 
 Deeplex is a deep learning-based method for clustering individuals in mixed-genotype single-cell RNA-seq experiments.
@@ -109,6 +110,8 @@ optional arguments:
   -b BAM, --bam BAM     BAM file
   -c BARCODE, --barcode BARCODE
                         Barcode list
+  -cn CLUSTER_NUM, --cluster_num CLUSTER_NUM
+                        Number of clusters, default 3
   -o OUT, --out OUT     Output Directory
   -bn BATCH_NUM, --batch_num BATCH_NUM
                         Number of batch, default 16
@@ -116,8 +119,6 @@ optional arguments:
                         Number of epoch, default 25
   -ld LATENT_DIM, --latent_dim LATENT_DIM
                         latent dimension, default 4
-  -cn CLUSTER_NUM, --cluster_num CLUSTER_NUM
-                        Number of clusters, default 3
   -si SHOW_INFO, --show_info SHOW_INFO
                         Whether to display detailed information, default True
   -tr TEST_RADIO, --test_radio TEST_RADIO
